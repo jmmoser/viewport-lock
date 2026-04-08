@@ -1,6 +1,6 @@
 # viewport-lock
 
-**Keep fixed headers and footers in place when the mobile virtual keyboard opens.**
+**Prevent the mobile keyboard from pushing your layout off-screen.**
 
 [![npm](https://img.shields.io/npm/v/viewport-lock)](https://www.npmjs.com/package/viewport-lock)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/viewport-lock)](https://bundlephobia.com/package/viewport-lock)
