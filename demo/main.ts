@@ -10,12 +10,18 @@ function enable() {
   cleanup = createViewportLock({
     container: app,
     eventTarget: document,
+    onResize(height, container) {
+      container.style.transition = "height 0.23s ease";
+      container.style.height = `${height}px`;
+    },
   });
 }
 
 function disable() {
   cleanup?.();
   cleanup = null;
+  app.style.height = "";
+  app.style.transition = "";
 }
 
 toggle.addEventListener("change", () => {
